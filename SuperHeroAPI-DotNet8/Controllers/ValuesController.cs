@@ -62,6 +62,7 @@ namespace SuperHeroAPI_DotNet8.Controllers
             return Ok(await _context.SuperHeroes.ToListAsync());
         }
 
+
         [HttpDelete]
         public async Task<ActionResult<List<SuperHero>>> DeleteHero(int id)
         {
